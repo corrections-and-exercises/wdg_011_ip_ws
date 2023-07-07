@@ -29,12 +29,12 @@ function App() {
 
   return (
     <>
-      {/* {ipData && (
+      {ipData && (
         <>
           <Ip ipData={ipData} ipError={ipError} />
           <CountryData code={ipData.location.country} />
         </>
-      )} */}
+      )}
       <Time />
       <Map />
     </>
