@@ -2,6 +2,7 @@ import Ip from './components/Ip.jsx';
 import Map from './components/Map.jsx';
 import CountryData from './components/CountryData.jsx';
 import {useState, useEffect} from 'react';
+import Time from './components/Time.jsx';
 
 function App() {
   const [ipData, setIpData] = useState();
@@ -28,12 +29,13 @@ function App() {
 
   return (
     <>
-      {ipData && (
+      {/* {ipData && (
         <>
           <Ip ipData={ipData} ipError={ipError} />
           <CountryData code={ipData.location.country} />
         </>
-      )}
+      )} */}
+      <Time />
       <Map />
     </>
   );
